@@ -114,12 +114,8 @@
                                                 <h6 class="mb-0 text-sm text-center">{{$p->alamat}}</h6>
                                             </td>
                                             <td class="align-middle text-center text-sm">
-                                                <form method='POST'action="{{route('admin.people.deletePenggunaUtama',$p->uuid)}}">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <a href="{{route('admin.people.editPenggunaUtama',$p->uuid)}}"><i class="fa fa-pencil me-3"></i></a>
-                                                    <button type="submit" class="border-0 bg-transparent"><i class="fa fa-trash ms-3"></i></button>
-                                                </form>
+                                            <a href="/"><i class="fa fa-pencil"></i></a>
+                                            <a href="/"><i class="fa fa-trash ms-5"></i></a>
                                             </td>
                                         </tr>
                                     @empty

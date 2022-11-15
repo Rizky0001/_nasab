@@ -5,7 +5,7 @@
         <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
             aria-hidden="true" id="iconSidenav"></i>
             <a class="navbar-brand m-0 d-flex text-wrap align-items-center" href=" http://127.0.0.1:8000/dashboard ">
-                <img src="http://127.0.0.1:8000/assets/img/logo-ct.png" class="navbar-brand-img h-100" alt="main_logo">
+                <img src="http://127.0.0.1:8000/assets/img/logo nasab.png" class="navbar-brand-img h-100" alt="main_logo">
                 <span class="ms-2 font-weight-bold text-white">WEB NASAB</span>
             </a>
     </div>
@@ -13,7 +13,7 @@
     <div class="collapse navbar-collapse  w-auto  max-height-vh-100" id="sidenav-collapse-main">
         <ul class="navbar-nav">
         <li class="nav-item">
-                <a class="nav-link text-white  {{ Route::currentRouteName() == 'admin.dashboard.index' ? ' active bg-gradient-primary' : '' }}"
+                <a class="nav-link text-white  {{ Route::currentRouteName() == 'users.dashboard.index' ? ' active bg-gradient-primary' : '' }}"
                     href="/">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">dashboard</i>
@@ -25,59 +25,31 @@
                 <a class="nav-link text-white  {{ Route::currentRouteName() == 'admin.tree.index' ? ' active bg-gradient-primary' : '' }}"
                     href="/tree">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                        <i style="font-size: 1.2rem;" class="fas fa-user-circle ps-2 pe-2 text-center"></i>
+                        <i style="font-size: 1.2rem;" class=" fa fa-sitemap ps-2 pe-2 text-center"></i>
                     </div>
                     <span class="nav-link-text ms-1">Tree</span>
                 </a>
             </li>
              <li class="nav-item">
                 <a class="nav-link text-white  "
-                    href="http://127.0.0.1:8000/user-profile">
+                    href="http://127.0.0.1:8000/kelola-data">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                        <i style="font-size: 1.2rem;" class="fas fa-user-circle ps-2 pe-2 text-center"></i>
+                        <i style="font-size: 1.2rem;" class="fa fa-pencil-square-o ps-2 pe-2 text-center"></i>
                     </div>
-                    <span class="nav-link-text ms-1">User Profile</span>
+                    <span class="nav-link-text ms-1">Kelola Data</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-white  "
-                    href="http://127.0.0.1:8000/user-management">
+                    href="http://127.0.0.1:8000/galery-keluarga">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                        <i style="font-size: 1rem;" class="fas fa-lg fa-list-ul ps-2 pe-2 text-center"></i>
+                        <i style="font-size: 1rem;" class="fa fa-image ps-2 pe-2 text-center"></i>
                     </div>
-                    <span class="nav-link-text ms-1">User Management</span>
-                </a>
-            </li>
-        
-            <li class="nav-item">
-                <a class="nav-link text-white  "
-                    href="http://127.0.0.1:8000/tables">
-                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="material-icons opacity-10">table_view</i>
-                    </div>
-                    <span class="nav-link-text ms-1">Tables</span>
+                    <span class="nav-link-text ms-1">Galery Keluarga</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white   "
-                    href="http://127.0.0.1:8000/notifications">
-                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="material-icons opacity-10">notifications</i>
-                    </div>
-                    <span class="nav-link-text ms-1">Notifications</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white   "
-                    href="http://127.0.0.1:8000/profile">
-                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="material-icons opacity-10">person</i>
-                    </div>
-                    <span class="nav-link-text ms-1">Profile</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white " href="http://127.0.0.1:8000/static-sign-in">
+                <a class="nav-link text-white " href="http://127.0.0.1:8000/login">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">login</i>
                     </div>

@@ -32,6 +32,7 @@
   margin-top: 0.30rem;
 }
 
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -2055,11 +2056,10 @@ textarea.form-control-lg {
   height: 1.23em;
   min-height: auto;
   padding-left: 1.73em;
-  margin-bottom: 0.125rem;
-}
+  margin-bottom: 0.125rem; }
   .form-check .form-check-input {
     float: left;
-    margin-left: -1.73em; }
+    margin-left: -1.73em; } 
 
 .form-check-input {
   width: 1.23em;
@@ -3428,9 +3428,9 @@ textarea.form-control-lg {
   .navbar > .container,
   .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
     display: flex;
-    flex-wrap: inherit;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between; }
+    justify-content:center; }
 
 .navbar-brand {
   padding-top: 0.40625rem;
@@ -6315,7 +6315,7 @@ textarea.form-control-lg {
   margin-left: 0.5rem !important; }
 
 .mx-3 {
-  margin-right: 1rem !important;
+  margin-right:1rem !important;
   margin-left: 1rem !important; }
 
 .mx-4 {
@@ -7014,7 +7014,7 @@ textarea.form-control-lg {
   padding-top: 1rem !important; }
 
 .pt-4 {
-  padding-top: 1.5rem !important; }
+  padding-top: 0.5rem !important; }
 
 .pt-5 {
   padding-top: 3rem !important; }
@@ -7089,7 +7089,7 @@ textarea.form-control-lg {
   padding-bottom: 0.5rem !important; }
 
 .pb-3 {
-  padding-bottom: 1rem !important; }
+  padding-bottom: 0.5rem !important; }
 
 .pb-4 {
   padding-bottom: 1.5rem !important; }
@@ -7275,7 +7275,7 @@ textarea.form-control-lg {
   color: #344767 !important; }
 
 .text-white {
-  color: #fff !important; }
+  color: white !important; }
 
 .text-body {
   color: #7b809a !important; }
@@ -7525,7 +7525,7 @@ textarea.form-control-lg {
   z-index: 1 !important; }
 
 .z-index-2 {
-  z-index: 2 !important; }
+  z-index: 1 !important; }
 
 .z-index-3 {
   z-index: 3 !important; }
@@ -8098,7 +8098,7 @@ textarea.form-control-lg {
     margin-top: auto !important;
     margin-bottom: auto !important; }
   .mt-sm-0 {
-    margin-top: 0 !important; }
+    margin-top: 0; }
   .mt-sm-1 {
     margin-top: 0.25rem !important; }
   .mt-sm-2 {
@@ -8128,13 +8128,14 @@ textarea.form-control-lg {
   .me-sm-0 {
     margin-right: 0 !important; }
   .me-sm-1 {
-    margin-right: 0.25rem !important; }
+    margin-right: 0.25rem !important;
+    color: white; }
   .me-sm-2 {
     margin-right: 0.5rem !important; }
   .me-sm-3 {
     margin-right: 1rem !important; }
   .me-sm-4 {
-    margin-right: 1.5rem !important; }
+    margin-right: 10rem !important; }
   .me-sm-5 {
     margin-right: 3rem !important; }
   .me-sm-6 {
@@ -13035,7 +13036,7 @@ textarea.form-control-lg {
   .card:hover[data-animation="true"] .card-header {
     transform: translate3d(0, -50px, 0); }
   .card .card-header {
-    padding: 1.5rem; }
+    padding: 1rem; }
   .card .card-body {
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     padding: 1.5rem; }
@@ -14002,7 +14003,7 @@ label,
   max-width: 2rem; }
 
 .bg-gradient-primary {
-  background-image: linear-gradient(195deg, #EC407A 0%, #D81B60 100%); }
+  background-image: linear-gradient(195deg, #4caf50 0%, #4caf50 100%); }
 
 .bg-gradient-secondary {
   background-image: linear-gradient(195deg, #747b8a 0%, #495361 100%); }
@@ -14020,11 +14021,17 @@ label,
   background-image: linear-gradient(195deg, #EF5350 0%, #E53935 100%); }
 
 .bg-gradient-light {
-  background-image: linear-gradient(195deg, #EBEFF4 0%, #CED4DA 100%); }
+  background-image: linear-gradient(195deg, #73777B 0%, #73777B 100%); }
 
 .bg-gradient-dark {
-  background-image: linear-gradient(195deg, #42424a 0%, #191919 100%); }
-
+  background-image: linear-gradient(195deg, #73777B 0%, #73777B 100%); }
+  img {
+    width: 90px;
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 .bg-gradient-faded-primary {
   background-image: radial-gradient(370px circle at 80% 50%, rgba(233, 30, 99, 0.6) 0, #c1134e 100%); }
 
@@ -16163,7 +16170,7 @@ p, .p {
   font-size: 1rem !important; }
 
 .text-sm {
-  font-size: 0.875rem !important; }
+  font-size: 1rem !important; }
 
 .text-xs {
   font-size: 0.75rem !important; }
