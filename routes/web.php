@@ -30,22 +30,11 @@ Route::get('/tree', function () {
     return view('admin.tree.index');
 })->name('admin.tree.index');
 
-Route::get('/navbar', function () {
-    return view('admin.navbar');
-})->name('admin.navbar');
+Route::delete('/admin/people/{uuid}/delete', [AdminPeopleController::class, 'destroy'])->name('admin.people.deletePenggunaUtama'); // delete data pengguna utama
+Route::get('/admin/people/{uuid}/edit', [AdminPeopleController::class, 'edit'])->name('admin.people.editPenggunaUtama'); //menampilkan data edit data pengguna utama
+Route::patch('/admin/people/{uuid}/update', [AdminPeopleController::class, 'update'])->name('admin.people.updatePenggunaUtama'); //proses update edit data pengguna utama
 
-Route::get('/sidebar', function () {
-    return view('admin.sidebar');
-})->name('admin.sidebar');
-
-Route::get('/viewprofil', function () {
-    return view('admin.viewprofil');
-})->name('admin.viewprofil');
-
-Route::get('/admin/people/edit', function () {
-    return view('admin.people.editPenggunaUtama');
-})->name('admin.people.editPenggunaUtama');
-
-Route::get('/admin/people/create', [AdminPeopleController::class, 'create'])->name('admin.people.tambahPenggunaUtama');
+Route::get('/admin/people/create', [AdminPeopleController::class, 'create'])->name('admin.people.tambahPenggunaUtama'); //menampilka data pengguna utama
+Route::post('/admin/people/store', [AdminPeopleController::class, 'store'])->name('admin.people.storePenggunaUtama'); //proses simpan data pengguna utama
 
 Route::get('/admin/people', [AdminPeopleController::class, 'index'])->name('admin.people.kelolaPenggunaUtama'); //menampilkan data pengguna utama
