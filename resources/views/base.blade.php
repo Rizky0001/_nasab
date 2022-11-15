@@ -16,9 +16,10 @@
 <html lang='en' dir="{{ Route::currentRouteName() == 'rtl' ? 'rtl' : '' }}">
 <head>
     <meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets') }}/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="{{ asset('assets') }}/img/favicon.png">
+    <link rel="icon" type="image/png" href="{{ asset('assets') }}/img/logo nasab.png" style="border-width: 2px;border-style: solid;border-color: white">
     <title>
         @yield('title','Bawaan ')
     </title>
@@ -61,35 +62,22 @@
 <body class="g-sidenav-show  bg-gray-200">
 
 @include('layouts.sidebar')
-    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
-        <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur"
+    navbar-scroll="true">
     <div class="container-fluid py-1 px-3">
-        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
-
+        <nav aria-label="breadcrumb">
+        </nav>
+        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4 bg-gradient-light" id="navbar"  >
+            <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+            </div>
             <form method="POST" action="" class="d-none" id="logout-form">
-                <input type="hidden" name="_token" value="wQSHgnx5kIft4l8eLJAVLO1kqEejVIyB3BQKGTlg">            </form>
+                @csrf
+            </form>
             <ul class="navbar-nav  justify-content-end">
-                <li class="nav-item d-flex align-items-center">
-                    <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
-                        <i class="fa fa-user me-sm-1"></i>
-                        <span wire:id="nxhadDOdExeVHSXMOFiQ" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;nxhadDOdExeVHSXMOFiQ&quot;,&quot;name&quot;:&quot;auth.logout&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;dashboard&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;cbfe6cf3&quot;,&quot;data&quot;:[],&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;23c9855cffbcf6c4f5512e226d20af674d30a25f23941dae055318782c64a108&quot;}}" wire:click="destroy" class="d-sm-inline d-none">Sign
-    Out</span>
-
-<!-- Livewire Component wire-end:nxhadDOdExeVHSXMOFiQ -->                    </a>
-                </li>
-                <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
-                    <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
-                        <div class="sidenav-toggler-inner">
-                            <i class="sidenav-toggler-line"></i>
-                            <i class="sidenav-toggler-line"></i>
-                            <i class="sidenav-toggler-line"></i>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item dropdown pe-2 d-flex align-items-center">
-                    <a href="javascript:;" class="nav-link text-body p-0" id="dropdownMenuButton"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa fa-bell cursor-pointer"></i>
+            <li class="nav-item dropdown pe-2 d-flex align-items-center">
+                    <a href="javascript:;" class="nav-link text-body p-0 aa" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-expanded="false" >
+                        <i class="fa fa-bell cursor-pointer me-sm-1"></i>
                     </a>
                     <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4"
                         aria-labelledby="dropdownMenuButton">
@@ -97,7 +85,7 @@
                             <a class="dropdown-item border-radius-md" href="javascript:;">
                                 <div class="d-flex py-1">
                                     <div class="my-auto">
-                                        <img src="http://127.0.0.1:8000/assets/img/team-2.jpg" class="avatar avatar-sm  me-3 ">
+                                        <img src="{{ asset('assets') }}/img/team-2.jpg" class="avatar avatar-sm  me-3 ">
                                     </div>
                                     <div class="d-flex flex-column justify-content-center">
                                         <h6 class="text-sm font-weight-normal mb-1">
@@ -169,6 +157,20 @@
                         </li>
                     </ul>
                 </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
+                        <i class="fa fa-user me-sm-1" style="padding: 20px"></i>
+                </li>
+                <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+                    <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+                        <div class="sidenav-toggler-inner">
+                            <i class="sidenav-toggler-line"></i>
+                            <i class="sidenav-toggler-line"></i>
+                            <i class="sidenav-toggler-line"></i>
+                        </div>
+                    </a>
+                </li>
+                
             </ul>
         </div>
     </div>
@@ -180,7 +182,7 @@
       @yield('content')
   </div>
   </div>
-
+  
 <!-- Livewire Component wire-end:AUtIeADVy46x12gY1XXe -->
 
         <footer class="footer py-4  ">
@@ -192,7 +194,7 @@
                         document.write(new Date().getFullYear())
 
                     </script>,
-                    made with <i class="fa fa-heart"></i> WEB NASAB
+                    made with <i class="fa fa-heart"></i> WEB NASAB 
                 </div>
             </div>
         </div>
@@ -291,7 +293,6 @@
 <script src="{{ asset('assets') }}/js/plugins/perfect-scrollbar.min.js"></script>
 <script src="{{ asset('assets') }}/js/plugins/smooth-scrollbar.min.js"></script>
 <script src="{{ asset('assets') }}/js/plugins/chartjs.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script>
       var ctx = document.getElementById("chart-bars").getContext("2d");
 
@@ -552,7 +553,6 @@
 <!-- Github buttons -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-<script src="{{ asset('assets') }}/js/material-dashboard.js?v=3.0.0"></script>
-@stack('js')
+<script src="{{ asset('assets') }}/js/material-dashboard.min.js?v=3.0.0"></script>
 </body>
 </html>

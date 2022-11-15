@@ -1,5 +1,5 @@
-@extends('base')
-@section('title','Dashboard')
+@extends('admin.dashboard.base')
+@section('title','Dashboard Admin')
 
 @section('content')
 <div class="container-fluid py-4">
@@ -28,10 +28,10 @@
                       <div class="card-header p-3 pt-2">
                           <div
                               class="icon icon-lg icon-shape bg-gradient-primary shadow-primary text-center border-radius-xl mt-n4 position-absolute">
-                              <i class="material-icons opacity-10">person</i>
+                              <i class="material-icons opacity-10"> ini dahsboard user</i>
                           </div>
                           <div class="text-end pt-1">
-                              <p class="text-sm mb-0 text-capitalize">Today's Users</p>
+                              <p class="text-sm mb-0 text-capitalize">Today's Users disini bedanya</p>
                               <h4 class="mb-0">2,300</h4>
                           </div>
                       </div>
