@@ -29,4 +29,4 @@ Route::patch('/admin/people/{uuid}/update', [AdminPeopleController::class, 'upda
 Route::get('/admin/people/create', [AdminPeopleController::class, 'create'])->name('admin.people.tambahPenggunaUtama'); //menampilka
 Route::post('/admin/people/store', [AdminPeopleController::class, 'store'])->name('admin.people.storePenggunaUtama'); //proses simpan data
 
-Route::get('/admin/people', [AdminPeopleController::class, 'index'])->name('admin.people.kelolaPenggunaUtama');
+Route::get('/admin/people', [AdminPeopleController::class, 'index'])->name('admin.people.kelolaPenggunaUtama'); //menampilkan data pengguna utama
