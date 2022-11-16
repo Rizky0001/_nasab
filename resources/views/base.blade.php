@@ -16,10 +16,9 @@
 <html lang='en' dir="{{ Route::currentRouteName() == 'rtl' ? 'rtl' : '' }}">
 <head>
     <meta charset="utf-8" />
-    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets') }}/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="{{ asset('assets') }}/img/logo nasab.png" style="border-width: 2px;border-style: solid;border-color: white">
+    <link rel="icon" type="image/png" href="{{ asset('assets') }}/img/favicon.png">
     <title>
         @yield('title','Bawaan ')
     </title>
@@ -62,8 +61,8 @@
 <body class="g-sidenav-show  bg-gray-200">
 
 @include('layouts.sidebar')
-    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur"
-    navbar-scroll="true">
+<main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
     <div class="container-fluid py-1 px-3">
         <nav aria-label="breadcrumb">
         </nav>
@@ -170,7 +169,7 @@
                         </div>
                     </a>
                 </li>
-                
+
             </ul>
         </div>
     </div>
@@ -182,7 +181,7 @@
       @yield('content')
   </div>
   </div>
-  
+
 <!-- Livewire Component wire-end:AUtIeADVy46x12gY1XXe -->
 
         <footer class="footer py-4  ">
@@ -194,7 +193,7 @@
                         document.write(new Date().getFullYear())
 
                     </script>,
-                    made with <i class="fa fa-heart"></i> WEB NASAB 
+                    made with <i class="fa fa-heart"></i> WEB NASAB
                 </div>
             </div>
         </div>
